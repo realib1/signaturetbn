@@ -14,12 +14,14 @@
   <title>Signature Trust Bank</title>
 </head>
 
-<body class="font-montserrat text-slate-800">
+<body class="font-roboto text-slate-800">
 <!-- Nav Header -->
 <header class="fixed bg-slate-200 left-0 top-0 mx-auto flex lg:ml-72 lg:w-4/5 w-full">
   <nav class="bg-slate-200 h-14 py-10 lg:px-24 px-10 flex justify-between items-center w-full mx-auto shadow-sm">
     <div class="flex justify-center items-center space-x-5 z-50">
-      <div class="logo font-bold font-kanit"><img class="w-28 h-full" src="/public/images/logo.png" alt="logo image"></div>
+      <a href="index.html">
+        <div class="logo font-bold font-kanit"><img class="w-28 h-full" src="/public/images/logo.png" alt="logo image"></div>
+      </a>
     </div>
     <div class="profile py-4">
       <div class="profile__image hidden lg:block">
@@ -47,8 +49,11 @@
     </div>
 
     <!-- Nav Links And Language -->
-    <div class="main-list font-montserrat space-y-5 text-slate-800">
-      <div class="language-dropdown w-full">
+    <div class="main-list font-roboto space-y-5 text-slate-800">
+      <div class="language-dropdown w-full flex">
+        <svg class="w-5 inline-block mr-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802"></path>
+        </svg>
         <select class="form-select w-full px-2 py-1 text-sm rounded-md border-2 focus:border-green-600 outline-none cursor-pointer" id="languages" name="languages">
           <option class="menu-item">Select Language</option>
           <option class="menu-item" value="af">Afrikaans</option>
@@ -276,7 +281,10 @@ Logout</a></li>
 
     <!-- Nav Links And Language -->
     <div class="main-list font-montserrat space-y-5 text-slate-800">
-      <div class="language-dropdown">
+      <div class="language-dropdown w-full flex">
+        <svg class="w-5 inline-block mr-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802"></path>
+        </svg>
         <select class="form-select w-4/5 px-2 py-1 text-sm rounded-md border-2 focus:border-green-600 outline-none" id="languages" name="languages">
           <option>Select Language</option>
           <option value="af">Afrikaans</option>

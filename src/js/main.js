@@ -13,18 +13,6 @@ window.addEventListener('DOMContentLoaded', function () {
         close.classList.toggle('hidden');
     });
 
-    // open.addEventListener('click', () => {
-    //     menu.classList.toggle('-translate-x-full');
-    //     open.classList.toggle('hidden');
-    //     close.classList.toggle('hidden');
-    // });
-
-
-    // close.addEventListener('click', () => {
-    //     menu.classList.toggle('-translate-x-full');
-    //     open.classList.toggle('hidden');
-    //     close.classList.toggle('hidden');
-    // });
 
 
     menuItem.forEach(item => {
@@ -34,18 +22,18 @@ window.addEventListener('DOMContentLoaded', function () {
             close.classList.toggle('hidden');
         });
 
-
-        window.addEventListener('click', function (e) {
-            if (!menu.contains(e.target) && !bars.contains(e.target) && !close.contains(e.target) && !open.contains(e.target)) {
-                menu.classList.toggle('-translate-x-full');
-                open.classList.toggle('hidden');
-                close.classList.toggle('hidden');
-            }
-        });
+        // Close when click outside
+    //     document.addEventListener('click', (event) => {
+    //        if (event.target !== menu && event.target !== bars && event.target !== open && event.target !== close) {
+    //            menu.classList.add('-translate-x-full');
+    //            open.classList.remove('hidden');
+    //            close.classList.add('hidden');
+    //        }
+    //    });
     });
 
 
-    // Close when click outside
+
 
 
 
