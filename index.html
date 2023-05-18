@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/dist/output.css" />
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&family=Montserrat:wght@300;600;700&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+  <title>Signature Trust Bank</title>
+</head>
+
+<body class="font-montserrat text-slate-800">
+<!-- Nav Header -->
+<header class="fixed bg-slate-200 left-0 top-0 mx-auto flex lg:ml-72 lg:w-4/5 w-full">
+  <nav class="bg-slate-200 h-14 py-10 lg:px-24 px-10 flex justify-between items-center w-full mx-auto shadow-sm">
+    <div class="flex justify-center items-center space-x-5 z-50">
+      <div class="logo font-bold font-kanit"><img class="w-28 h-full" src="/public/images/logo.png" alt="logo image"></div>
+    </div>
+    <div class="profile py-4">
+      <div class="profile__image hidden lg:block">
+        <a href="">
+          <img class="rounded-full w-14 h-14 border-2 border-green-600" src="/public/images/profile.jpg" alt="profile image" />
+        </a>
+      </div>
+    </div>
+      <!-- Side Menu -->
+<div class="fixed top-20 lg:top-0 inset-y-0 origin-left transform transition-transform duration-300 ease-in-out -translate-x-full left-0 overflow-y-auto menu">
+  <aside class="h-screen w-72 bg-slate-300 text-xl py-4 overflow-y-scroll lg:flex flex-col items-start justify-start space-y-2">
+
+    <div class="mx-auto w-4/5">
+      <!-- User Profile -->
+    <div class="sticky profile flex justify-start space-x-4 shadow-sm h-16 items-start w-full mb-5 lg:mb-10">
+      <a href="" class="menu-item">
+      <div class="profile__image">
+          <img class="rounded-full w-14 h-14 border-2 border-green-600" src="/public/images/profile.jpg" alt="profile image" />
+        </div>
+        <div class="profile__name font-bold font-kanit">
+          <p class=" font-montserrat text-slate-700">John Doe</p>
+          <p class="text-xs text-slate-400 font-montserrat">Customer Account</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Nav Links And Language -->
+    <div class="main-list font-montserrat space-y-5 text-slate-800">
+      <div class="language-dropdown w-full">
+        <select class="form-select w-full px-2 py-1 text-sm rounded-md border-2 focus:border-green-600 outline-none cursor-pointer" id="languages" name="languages">
+          <option class="menu-item">Select Language</option>
+          <option class="menu-item" value="af">Afrikaans</option>
+          <option class="menu-item" value="sq">Albanian - shqip</option>
+          <option class="menu-item" value="am">Amharic - አማርኛ</option>
+          <option class="menu-item" value="ar">Arabic - العربية</option>
+          <option class="menu-item" value="an">Aragonese - aragonés</option>
+          <option class="menu-item" value="hy">Armenian - հայերեն</option>
+          <option class="menu-item" value="ast">Asturian - asturianu</option>
+          <option class="menu-item" value="az">Azerbaijani - azərbaycan dili</option>
+          <option class="menu-item" value="eu">Basque - euskara</option>
+          <option class="menu-item" value="be">Belarusian - беларуская</option>
+          <option class="menu-item" value="bn">Bengali - বাংলা</option>
+          <option class="menu-item" value="bs">Bosnian - bosanski</option>
+          <option class="menu-item" value="br">Breton - brezhoneg</option>
+          <option class="menu-item" value="bg">Bulgarian - български</option>
+          <option class="menu-item" value="ca">Catalan - català</option>
+          <option class="menu-item" value="ckb">Central Kurdish - کوردی (دەستنوسی عەرەبی)</option>
+          <option class="menu-item" value="zh">Chinese - 中文</option>
+          <option class="menu-item" value="zh-HK">Chinese (Hong Kong) - 中文（香港）</option>
+          <option class="menu-item" value="zh-CN">Chinese (Simplified) - 中文（简体）</option>
+          <option class="menu-item" value="zh-TW">Chinese (Traditional) - 中文（繁體）</option>
+          <option class="menu-item" value="co">Corsican</option>
+          <option class="menu-item" value="hr">Croatian - hrvatski</option>
+          <option class="menu-item" value="cs">Czech - čeština</option>
+          <option class="menu-item" value="da">Danish - dansk</option>
+          <option class="menu-item" value="nl">Dutch - Nederlands</option>
+          <option class="menu-item" value="en">English</option>
+          <option class="menu-item" value="en-AU">English (Australia)</option>
+          <option class="menu-item" value="en-CA">English (Canada)</option>
+          <option class="menu-item" value="en-IN">English (India)</option>
+          <option class="menu-item" value="en-NZ">English (New Zealand)</option>
+          <option class="menu-item" value="en-ZA">English (South Africa)</option>
+          <option class="menu-item" value="en-GB">English (United Kingdom)</option>
+          <option class="menu-item" value="en-US">English (United States)</option>
+          <option class="menu-item" value="eo">Esperanto - esperanto</option>
+          <option class="menu-item" value="et">Estonian - eesti</option>
+          <option class="menu-item" value="fo">Faroese - føroyskt</option>
+          <option class="menu-item" value="fil">Filipino</option>
+          <option class="menu-item" value="fi">Finnish - suomi</option>
+          <option class="menu-item" value="fr">French - français</option>
+          <option class="menu-item" value="fr-CA">French (Canada) - français (Canada)</option>
+          <option class="menu-item" value="fr-FR">French (France) - français (France)</option>
+          <option class="menu-item" value="fr-CH">French (Switzerland) - français (Suisse)</option>
+          <option class="menu-item" value="gl">Galician - galego</option>
+          <option class="menu-item" value="ka">Georgian - ქართული</option>
+          <option class="menu-item" value="de">German - Deutsch</option>
+          <option class="menu-item" value="de-AT">German (Austria) - Deutsch (Österreich)</option>
+          <option class="menu-item" value="de-DE">German (Germany) - Deutsch (Deutschland)</option>
+          <option class="menu-item" value="de-LI">German (Liechtenstein) - Deutsch (Liechtenstein)</option>
+          <option class="menu-item" value="de-CH">German (Switzerland) - Deutsch (Schweiz)</option>
+          <option class="menu-item" value="el">Greek - Ελληνικά</option>
+          <option class="menu-item" value="gn">Guarani</option>
+          <option class="menu-item" value="gu">Gujarati - ગુજરાતી</option>
+          <option class="menu-item" value="ha">Hausa</option>
+          <option class="menu-item" value="haw">Hawaiian - ʻŌlelo Hawaiʻi</option>
+          <option class="menu-item" value="he">Hebrew - עברית</option>
+          <option class="menu-item" value="hi">Hindi - हिन्दी</option>
+          <option class="menu-item" value="hu">Hungarian - magyar</option>
+          <option class="menu-item" value="is">Icelandic - íslenska</option>
+          <option class="menu-item" value="id">Indonesian - Indonesia</option>
+          <option class="menu-item" value="ia">Interlingua</option>
+          <option class="menu-item" value="ga">Irish - Gaeilge</option>
+          <option class="menu-item" value="it">Italian - italiano</option>
+          <option class="menu-item" value="it-IT">Italian (Italy) - italiano (Italia)</option>
+          <option class="menu-item" value="it-CH">Italian (Switzerland) - italiano (Svizzera)</option>
+          <option class="menu-item" value="ja">Japanese - 日本語</option>
+          <option class="menu-item" value="kn">Kannada - ಕನ್ನಡ</option>
+          <option class="menu-item" value="kk">Kazakh - қазақ тілі</option>
+          <option class="menu-item" value="km">Khmer - ខ្មែរ</option>
+          <option class="menu-item" value="ko">Korean - 한국어</option>
+          <option class="menu-item" value="ku">Kurdish - Kurdî</option>
+          <option class="menu-item" value="ky">Kyrgyz - кыргызча</option>
+          <option class="menu-item" value="lo">Lao - ລາວ</option>
+          <option class="menu-item" value="la">Latin</option>
+          <option class="menu-item" value="lv">Latvian - latviešu</option>
+          <option class="menu-item" value="ln">Lingala - lingála</option>
+          <option class="menu-item" value="lt">Lithuanian - lietuvių</option>
+          <option class="menu-item" value="mk">Macedonian - македонски</option>
+          <option class="menu-item" value="ms">Malay - Bahasa Melayu</option>
+          <option class="menu-item" value="ml">Malayalam - മലയാളം</option>
+          <option class="menu-item" value="mt">Maltese - Malti</option>
+          <option class="menu-item" value="mr">Marathi - मराठी</option>
+          <option class="menu-item" value="mn">Mongolian - монгол</option>
+          <option class="menu-item" value="ne">Nepali - नेपाली</option>
+          <option class="menu-item" value="no">Norwegian - norsk</option>
+          <option class="menu-item" value="nb">Norwegian Bokmål - norsk bokmål</option>
+          <option class="menu-item" value="nn">Norwegian Nynorsk - nynorsk</option>
+          <option class="menu-item" value="oc">Occitan</option>
+          <option class="menu-item" value="or">Oriya - ଓଡ଼ିଆ</option>
+          <option class="menu-item" value="om">Oromo - Oromoo</option>
+          <option class="menu-item" value="ps">Pashto - پښتو</option>
+          <option class="menu-item" value="fa">Persian - فارسی</option>
+          <option class="menu-item" value="pl">Polish - polski</option>
+          <option class="menu-item" value="pt">Portuguese - português</option>
+          <option class="menu-item" value="pt-BR">Portuguese (Brazil) - português (Brasil)</option>
+          <option class="menu-item" value="pt-PT">Portuguese (Portugal) - português (Portugal)</option>
+          <option class="menu-item" value="pa">Punjabi - ਪੰਜਾਬੀ</option>
+          <option class="menu-item" value="qu">Quechua</option>
+          <option class="menu-item" value="ro">Romanian - română</option>
+          <option class="menu-item" value="mo">Romanian (Moldova) - română (Moldova)</option>
+          <option class="menu-item" value="rm">Romansh - rumantsch</option>
+          <option class="menu-item" value="ru">Russian - русский</option>
+          <option class="menu-item" value="gd">Scottish Gaelic</option>
+          <option class="menu-item" value="sr">Serbian - српски</option>
+          <option class="menu-item" value="sh">Serbo-Croatian - Srpskohrvatski</option>
+          <option class="menu-item" value="sn">Shona - chiShona</option>
+          <option class="menu-item" value="sd">Sindhi</option>
+          <option class="menu-item" value="si">Sinhala - සිංහල</option>
+          <option class="menu-item" value="sk">Slovak - slovenčina</option>
+          <option class="menu-item" value="sl">Slovenian - slovenščina</option>
+          <option class="menu-item" value="so">Somali - Soomaali</option>
+          <option class="menu-item" value="st">Southern Sotho</option>
+          <option class="menu-item" value="es">Spanish - español</option>
+          <option class="menu-item" value="es-AR">Spanish (Argentina) - español (Argentina)</option>
+          <option class="menu-item" value="es-419">Spanish (Latin America) - español (Latinoamérica)</option>
+          <option class="menu-item" value="es-MX">Spanish (Mexico) - español (México)</option>
+          <option class="menu-item" value="es-ES">Spanish (Spain) - español (España)</option>
+          <option class="menu-item" value="es-US">Spanish (United States) - español (Estados Unidos)</option>
+          <option class="menu-item" value="su">Sundanese</option>
+          <option class="menu-item" value="sw">Swahili - Kiswahili</option>
+          <option class="menu-item" value="sv">Swedish - svenska</option>
+          <option class="menu-item" value="tg">Tajik - тоҷикӣ</option>
+          <option class="menu-item" value="ta">Tamil - தமிழ்</option>
+          <option class="menu-item" value="tt">Tatar</option>
+          <option class="menu-item" value="te">Telugu - తెలుగు</option>
+          <option class="menu-item" value="th">Thai - ไทย</option>
+          <option class="menu-item" value="ti">Tigrinya - ትግርኛ</option>
+          <option class="menu-item" value="to">Tongan - lea fakatonga</option>
+          <option class="menu-item" value="tr">Turkish - Türkçe</option>
+          <option class="menu-item" value="tk">Turkmen</option>
+          <option class="menu-item" value="tw">Twi</option>
+          <option class="menu-item" value="uk">Ukrainian - українська</option>
+          <option class="menu-item" value="ur">Urdu - اردو</option>
+          <option class="menu-item" value="ug">Uyghur</option>
+          <option class="menu-item" value="uz">Uzbek - o‘zbek</option>
+          <option class="menu-item" value="vi">Vietnamese - Tiếng Việt</option>
+          <option class="menu-item" value="wa">Walloon - wa</option>
+          <option class="menu-item" value="cy">Welsh - Cymraeg</option>
+          <option class="menu-item" value="fy">Western Frisian</option>
+          <option class="menu-item" value="xh">Xhosa</option>
+          <option class="menu-item" value="yi">Yiddish</option>
+          <option class="menu-item" value="yo">Yoruba - Èdè Yorùbá</option>
+          <option class="menu-item" value="zu">Zulu - isiZulu</option>
+      </select>
+      </div>
+
+      <!-- Nav Links -->
+      <ul class="text-base text-slate-700 space-y-3">
+        <li class="menu-item text-slate-700 font-montserrat border-l-2 border-amber-500 px-4 py-1 bg-amber-100"><a href="">
+          <svg  class="w-6 text-slate-500 inline-block mr-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 01-1.125-1.125v-3.75zM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-8.25zM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-2.25z"></path>
+          </svg>
+                    Dashboard</a></li>
+        <li class="menu-item text-slate-700 font-montserrat px-4 py-1 hover:bg-amber-100"><a href=""><svg class="w-6 text-slate-500 inline-block mr-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+        </svg>
+Sub Account</a></li>
+        <li class="menu-item text-slate-700 font-montserrat px-4 py-1 hover:bg-amber-100"><a href=""><svg class="w-6 text-slate-500 inline-block mr-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5L7.5 3m0 0L12 7.5M7.5 3v13.5m13.5 0L16.5 21m0 0L12 16.5m4.5 4.5V7.5"></path>
+        </svg>
+Funds Transfer</a></li>
+        <li class="menu-item text-slate-700 font-montserrat px-4 py-1 hover:bg-amber-100"><a href=""><svg class="w-6 text-slate-500 inline-block mr-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"></path>
+        </svg>
+E-Statement</a></li>
+        <li class="menu-item text-slate-700 font-montserrat px-4 py-1 hover:bg-amber-100"><a href=""><svg class="w-6 text-slate-500 inline-block mr-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"></path>
+        </svg>
+Make Deopsit</a></li>
+        <li class="menu-item text-slate-700 font-montserrat px-4 py-1 hover:bg-amber-100"><a href=""><svg class="w-6 text-slate-500 inline-block mr-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z"></path>
+        </svg>
+Virtual Cards</a></li>
+        <li class="menu-item text-slate-700 font-montserrat px-4 py-1 hover:bg-amber-100"><a href=""><svg class="w-6 text-slate-500 inline-block mr-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"></path>
+        </svg>
+Quick Credit/Loan</a></li>
+        <li class="menu-item text-slate-700 font-montserrat px-4 py-1 hover:bg-amber-100"><a href=""><svg class="w-6 text-slate-500 inline-block mr-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"></path>
+</svg>
+Manage Account</a></li>
+        <li class="menu-item text-slate-700 font-montserrat px-4 py-1 hover:bg-amber-100"><a href="">
+          <svg class="w-6 text-slate-500 inline-block mr-2"  fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path>
+          </svg>Support/Mail</a></li>
+        <li class="menu-item text-slate-700 font-montserrat px-4 py-1 hover:bg-amber-100"><a href=""><svg class="w-6 text-slate-500 inline-block mr-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9"></path>
+        </svg>
+Logout</a></li>
+       </ul>
+    </div>
+
+    
+  </div>
+  </aside>
+</div>
+
+      <button class="border-none outline-none bars lg:hidden transform transition-transform duration-700 ease-in-out">
+        <svg class="w-8 inline-block" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path class="open-btn" stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+          <path class="close-btn hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+
+  </nav>
+
+</header>
+<!-- Side Menu -->
+<section class="fixed top-0 left-0">
+  <aside class="hidden h-screen w-72 bg-slate-300 text-xl py-4 overflow-y-scroll lg:flex flex-col items-start justify-start space-y-5">
+
+    <div class="mx-auto w-4/5">
+      <!-- User Profile -->
+    <div class="sticky profile flex justify-start space-x-4 shadow-sm h-16 items-start w-full mb-10">
+      <div class="profile__image">
+        <img class="rounded-full w-14 h-14 border-2 border-green-600" src="/public/images/profile.jpg" alt="profile image" />
+      </div>
+      <div class="profile__name font-bold font-kanit">
+        <p class=" font-montserrat text-slate-700">John Doe</p>
+        <p class="text-xs text-slate-400 font-montserrat">Customer Account</p>
+      </div>
+    </div>
+
+    <!-- Nav Links And Language -->
+    <div class="main-list font-montserrat space-y-5 text-slate-800">
+      <div class="language-dropdown">
+        <select class="form-select w-4/5 px-2 py-1 text-sm rounded-md border-2 focus:border-green-600 outline-none" id="languages" name="languages">
+          <option>Select Language</option>
+          <option value="af">Afrikaans</option>
+          <option value="sq">Albanian - shqip</option>
+          <option value="am">Amharic - አማርኛ</option>
+          <option value="ar">Arabic - العربية</option>
+          <option value="an">Aragonese - aragonés</option>
+          <option value="hy">Armenian - հայերեն</option>
+          <option value="ast">Asturian - asturianu</option>
+          <option value="az">Azerbaijani - azərbaycan dili</option>
+          <option value="eu">Basque - euskara</option>
+          <option value="be">Belarusian - беларуская</option>
+          <option value="bn">Bengali - বাংলা</option>
+          <option value="bs">Bosnian - bosanski</option>
+          <option value="br">Breton - brezhoneg</option>
+          <option value="bg">Bulgarian - български</option>
+          <option value="ca">Catalan - català</option>
+          <option value="ckb">Central Kurdish - کوردی (دەستنوسی عەرەبی)</option>
+          <option value="zh">Chinese - 中文</option>
+          <option value="zh-HK">Chinese (Hong Kong) - 中文（香港）</option>
+          <option value="zh-CN">Chinese (Simplified) - 中文（简体）</option>
+          <option value="zh-TW">Chinese (Traditional) - 中文（繁體）</option>
+          <option value="co">Corsican</option>
+          <option value="hr">Croatian - hrvatski</option>
+          <option value="cs">Czech - čeština</option>
+          <option value="da">Danish - dansk</option>
+          <option value="nl">Dutch - Nederlands</option>
+          <option value="en">English</option>
+          <option value="en-AU">English (Australia)</option>
+          <option value="en-CA">English (Canada)</option>
+          <option value="en-IN">English (India)</option>
+          <option value="en-NZ">English (New Zealand)</option>
+          <option value="en-ZA">English (South Africa)</option>
+          <option value="en-GB">English (United Kingdom)</option>
+          <option value="en-US">English (United States)</option>
+          <option value="eo">Esperanto - esperanto</option>
+          <option value="et">Estonian - eesti</option>
+          <option value="fo">Faroese - føroyskt</option>
+          <option value="fil">Filipino</option>
+          <option value="fi">Finnish - suomi</option>
+          <option value="fr">French - français</option>
+          <option value="fr-CA">French (Canada) - français (Canada)</option>
+          <option value="fr-FR">French (France) - français (France)</option>
+          <option value="fr-CH">French (Switzerland) - français (Suisse)</option>
+          <option value="gl">Galician - galego</option>
+          <option value="ka">Georgian - ქართული</option>
+          <option value="de">German - Deutsch</option>
+          <option value="de-AT">German (Austria) - Deutsch (Österreich)</option>
+          <option value="de-DE">German (Germany) - Deutsch (Deutschland)</option>
+          <option value="de-LI">German (Liechtenstein) - Deutsch (Liechtenstein)</option>
+          <option value="de-CH">German (Switzerland) - Deutsch (Schweiz)</option>
+          <option value="el">Greek - Ελληνικά</option>
+          <option value="gn">Guarani</option>
+          <option value="gu">Gujarati - ગુજરાતી</option>
+          <option value="ha">Hausa</option>
+          <option value="haw">Hawaiian - ʻŌlelo Hawaiʻi</option>
+          <option value="he">Hebrew - עברית</option>
+          <option value="hi">Hindi - हिन्दी</option>
+          <option value="hu">Hungarian - magyar</option>
+          <option value="is">Icelandic - íslenska</option>
+          <option value="id">Indonesian - Indonesia</option>
+          <option value="ia">Interlingua</option>
+          <option value="ga">Irish - Gaeilge</option>
+          <option value="it">Italian - italiano</option>
+          <option value="it-IT">Italian (Italy) - italiano (Italia)</option>
+          <option value="it-CH">Italian (Switzerland) - italiano (Svizzera)</option>
+          <option value="ja">Japanese - 日本語</option>
+          <option value="kn">Kannada - ಕನ್ನಡ</option>
+          <option value="kk">Kazakh - қазақ тілі</option>
+          <option value="km">Khmer - ខ្មែរ</option>
+          <option value="ko">Korean - 한국어</option>
+          <option value="ku">Kurdish - Kurdî</option>
+          <option value="ky">Kyrgyz - кыргызча</option>
+          <option value="lo">Lao - ລາວ</option>
+          <option value="la">Latin</option>
+          <option value="lv">Latvian - latviešu</option>
+          <option value="ln">Lingala - lingála</option>
+          <option value="lt">Lithuanian - lietuvių</option>
+          <option value="mk">Macedonian - македонски</option>
+          <option value="ms">Malay - Bahasa Melayu</option>
+          <option value="ml">Malayalam - മലയാളം</option>
+          <option value="mt">Maltese - Malti</option>
+          <option value="mr">Marathi - मराठी</option>
+          <option value="mn">Mongolian - монгол</option>
+          <option value="ne">Nepali - नेपाली</option>
+          <option value="no">Norwegian - norsk</option>
+          <option value="nb">Norwegian Bokmål - norsk bokmål</option>
+          <option value="nn">Norwegian Nynorsk - nynorsk</option>
+          <option value="oc">Occitan</option>
+          <option value="or">Oriya - ଓଡ଼ିଆ</option>
+          <option value="om">Oromo - Oromoo</option>
+          <option value="ps">Pashto - پښتو</option>
+          <option value="fa">Persian - فارسی</option>
+          <option value="pl">Polish - polski</option>
+          <option value="pt">Portuguese - português</option>
+          <option value="pt-BR">Portuguese (Brazil) - português (Brasil)</option>
+          <option value="pt-PT">Portuguese (Portugal) - português (Portugal)</option>
+          <option value="pa">Punjabi - ਪੰਜਾਬੀ</option>
+          <option value="qu">Quechua</option>
+          <option value="ro">Romanian - română</option>
+          <option value="mo">Romanian (Moldova) - română (Moldova)</option>
+          <option value="rm">Romansh - rumantsch</option>
+          <option value="ru">Russian - русский</option>
+          <option value="gd">Scottish Gaelic</option>
+          <option value="sr">Serbian - српски</option>
+          <option value="sh">Serbo-Croatian - Srpskohrvatski</option>
+          <option value="sn">Shona - chiShona</option>
+          <option value="sd">Sindhi</option>
+          <option value="si">Sinhala - සිංහල</option>
+          <option value="sk">Slovak - slovenčina</option>
+          <option value="sl">Slovenian - slovenščina</option>
+          <option value="so">Somali - Soomaali</option>
+          <option value="st">Southern Sotho</option>
+          <option value="es">Spanish - español</option>
+          <option value="es-AR">Spanish (Argentina) - español (Argentina)</option>
+          <option value="es-419">Spanish (Latin America) - español (Latinoamérica)</option>
+          <option value="es-MX">Spanish (Mexico) - español (México)</option>
+          <option value="es-ES">Spanish (Spain) - español (España)</option>
+          <option value="es-US">Spanish (United States) - español (Estados Unidos)</option>
+          <option value="su">Sundanese</option>
+          <option value="sw">Swahili - Kiswahili</option>
+          <option value="sv">Swedish - svenska</option>
+          <option value="tg">Tajik - тоҷикӣ</option>
+          <option value="ta">Tamil - தமிழ்</option>
+          <option value="tt">Tatar</option>
+          <option value="te">Telugu - తెలుగు</option>
+          <option value="th">Thai - ไทย</option>
+          <option value="ti">Tigrinya - ትግርኛ</option>
+          <option value="to">Tongan - lea fakatonga</option>
+          <option value="tr">Turkish - Türkçe</option>
+          <option value="tk">Turkmen</option>
+          <option value="tw">Twi</option>
+          <option value="uk">Ukrainian - українська</option>
+          <option value="ur">Urdu - اردو</option>
+          <option value="ug">Uyghur</option>
+          <option value="uz">Uzbek - o‘zbek</option>
+          <option value="vi">Vietnamese - Tiếng Việt</option>
+          <option value="wa">Walloon - wa</option>
+          <option value="cy">Welsh - Cymraeg</option>
+          <option value="fy">Western Frisian</option>
+          <option value="xh">Xhosa</option>
+          <option value="yi">Yiddish</option>
+          <option value="yo">Yoruba - Èdè Yorùbá</option>
+          <option value="zu">Zulu - isiZulu</option>
+      </select>
+      </div>
+
+      <!-- Nav Links -->
+      <ul class="text-base text-slate-700 space-y-3">
+        <li class="text-slate-700 font-montserrat border-l-2 border-amber-500 px-4 py-1 bg-amber-100"><a href="">
+          <svg  class="w-6 text-slate-500 inline-block mr-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 01-1.125-1.125v-3.75zM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-8.25zM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-2.25z"></path>
+          </svg>
+                    Dashboard</a></li>
+        <li class="menu-item text-slate-700 font-montserrat px-4 py-1 hover:bg-amber-100"><a href=""><svg class="w-6 text-slate-500 inline-block mr-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+        </svg>
+Sub Account</a></li>
+        <li class="menu-item text-slate-700 font-montserrat px-4 py-1 hover:bg-amber-100"><a href=""><svg class="w-6 text-slate-500 inline-block mr-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5L7.5 3m0 0L12 7.5M7.5 3v13.5m13.5 0L16.5 21m0 0L12 16.5m4.5 4.5V7.5"></path>
+        </svg>
+Funds Transfer</a></li>
+        <li class="menu-item text-slate-700 font-montserrat px-4 py-1 hover:bg-amber-100"><a href=""><svg class="w-6 text-slate-500 inline-block mr-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"></path>
+        </svg>
+E-Statement</a></li>
+        <li class="menu-item text-slate-700 font-montserrat px-4 py-1 hover:bg-amber-100"><a href=""><svg class="w-6 text-slate-500 inline-block mr-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"></path>
+        </svg>
+Make Deopsit</a></li>
+        <li class="menu-item text-slate-700 font-montserrat px-4 py-1 hover:bg-amber-100"><a href=""><svg class="w-6 text-slate-500 inline-block mr-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z"></path>
+        </svg>
+Virtual Cards</a></li>
+        <li class="menu-item text-slate-700 font-montserrat px-4 py-1 hover:bg-amber-100"><a href=""><svg class="w-6 text-slate-500 inline-block mr-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"></path>
+        </svg>
+Quick Credit/Loan</a></li>
+        <li class="menu-item text-slate-700 font-montserrat px-4 py-1 hover:bg-amber-100"><a href=""><svg class="w-6 text-slate-500 inline-block mr-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"></path>
+</svg>
+Manage Account</a></li>
+        <li class="menu-item text-slate-700 font-montserrat px-4 py-1 hover:bg-amber-100"><a href="">
+          <svg class="w-6 text-slate-500 inline-block mr-2"  fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path>
+          </svg>Support/Mail</a></li>
+        <li class="menu-item text-slate-700 font-montserrat px-4 py-1 hover:bg-amber-100"><a href=""><svg class="w-6 text-slate-500 inline-block mr-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9"></path>
+        </svg>
+Logout</a></li>
+       </ul>
+    </div>
+
+    
+  </div>
+  </aside>
+</section>
+<!-- Main Content -->
+<main class="bg-slate-100 pt-20">
+
+  <!--  -->
+  <section class="lg:ml-72">
+    <div class="w-4/5 mx-auto py-10">
+        <div class="w-full h-28 lg:flex justify-between items-start px-4 py-4">
+          <div class="w-full">
+            <h4 class="text-2xl font-kanit">Welcome, Eamonn French</h4>
+            <p class="text-slate-500">Here's a summary of what's been happening</p>
+          </div>
+          <div class="lg:w-1/4 hidden lg:block">
+            <a href="">
+              <img src="/public/images/dashboard-plant.svg" alt="profile image" />
+            </a>
+          </div>
+        </div>
+      
+        <div class="lg:flex justify-between items-start space-y-10 lg:space-y-0">
+          <div>
+            <div class="shadow-md rounded-sm border-l-8 border-l-emerald-800 px-6 py-8 flex justify-between items-center space-x-5">
+              <div class="space-y-2">
+              <h5 class="text-base font-bold font-kanit">SAVINGS ACCOUNT</h5>
+              <p class="text-sm">EAMONN FRENCH- READYCASH</p>
+              <p class="text-base font-kanit">SUB ACCOUNT: <span class="text-green-700">93619*****74</span></p>
+              <h5 class="text-2xl text-green-800 font-bold font-montserrat pt-8"><span class="font-kanit">$</span>845,700.11  <svg class="w-10 inline-block" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"></path>
+              </svg></h5>
+              <div class="buttons pt-2 space-y-2 lg:space-y-0">
+                <button class="text-sm md:text-base bg-green-800 text-white px-4 py-2 rounded-sm font-kanit cursor-pointer">DEPOSIT</button>
+                <button class="text-sm md:text-base bg-green-800 text-white px-4 py-2 rounded-sm font-kanit cursor-pointer">TRANSFER</button>
+              </div>
+            </div>
+            <div class="text-green-800 bg-green-200 px-2 py-2 rounded-full"><svg class="w-10" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z"></path>
+            </svg>
+            
+          </div>
+  
+            </div>
+            
+          </div>
+          <div>
+            <div class="shadow-md rounded-sm px-6 py-8 border-l-8 border-l-emerald-800">
+              <div class="space-y-3 text-green-800">
+              <h5 class="text-2xl text-green-800 font-bold font-kanit">GBP &nbsp; &nbsp;<span class="font-montserrat">0.00</span> <svg class="w-10 inline-block" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"></path>
+              </svg></h5>
+              <p class="text-sm">SUB ACCOUNT: <span class="text-green-700">3418173097</span></p>
+              <p class="text-sm">TYPE: <span class="font-semibold">CHECKING</span></p>
+              <p class="text-sm">STATUS: <span class="font-semibold">ACTIVE</span></p>
+            </div>
+
+            <div class="buttons mt-10 space-y-2 lg:space-y-0">
+              <button class="bg-green-800 text-white px-4 py-2 rounded-sm font-kanit cursor-pointer">SUB TRANSFER</button>
+              <button class="bg-green-800 text-white px-4 py-2 rounded-sm font-kanit cursor-pointer">ADD SUB-ACCOUNT</button>
+            </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Transaction Statitics -->
+       <div class="stat w-full shadow-md space-y-5 mx-auto rounded-md px-6 py-8 mt-10">
+        <div class="lg:flex justify-between items-start space-y-2 lg:space-y-0">
+          <h4 class="text-2xl font-kanit">Summary</h4>
+          <div class="flex space-x-4">
+            <div class="flex space-x-2 items-center">
+              <div class="w-3 h-3 rounded-full bg-green-800"></div>
+              <p class="text-sm">Income</p>
+            </div>
+            <div class="flex space-x-2 items-center">
+              <div class="w-3 h-3 rounded-full bg-red-800"></div>
+              <p class="text-sm">Expense</p>
+            </div>
+            <a href="" class="border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-slate-100 rounded-md px-4 py-1">Statics</a>
+        </div>
+      </div>
+
+      <div class="income border-b-2 border-b-slate-400 pb-2">
+        <h5 class="text-2xl text-green-800 font-bold font-montserrat pt-8"><span class="font-kanit">$</span>850000 <svg class="w-10 inline-block" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"></path>
+        </svg></h5>
+        <p class="uppercase text-emerald-800 font-kanit">LAST INFLOW</p>
+      </div>
+      <div class="income border-b-2 border-b-slate-400 pb-2">
+        <h5 class="text-2xl text-red-800 font-bold font-montserrat pt-8"><span class="font-kanit">$</span>1500 <svg class="w-10 inline-block" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6L9 12.75l4.286-4.286a11.948 11.948 0 014.306 6.43l.776 2.898m0 0l3.182-5.511m-3.182 5.51l-5.511-3.181"></path>
+        </svg></h5>
+        <p class="uppercase text-red-800 font-kanit">LAST OUTFLOW</p>
+
+      </div>
+
+      <!-- Transaction graph -->
+      <div class="graph mx-auto pt-10">
+        <h4 class="text-2xl font-kanit text-center">Transaction Statistics</h4>
+        <div class="graph-container">
+          <canvas id="myChart"></canvas>
+        </div>
+       </div>
+       </div>
+        <!-- Transaction history table -->
+        <div class="stat w-full shadow-md space-y-5 mx-auto rounded-md px-6 py-8 mt-10">
+          <div class="lg:flex justify-between items-start">
+            <h4 class="text-2xl font-kanit mb-5 lg:mb-0">Recent Transactions</h4>
+            <a href="" class="border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-slate-100 rounded-md px-4 py-1">All Transactions</a>
+        </div>
+        <div class="overflow-scroll w-full">
+        <table class="table-auto text-slate-600 border-collapse border border-slate-500 w-full overflow-scroll">
+          <thead>
+            <tr>
+              <th class="border-2 border-slate-500 font-kanit">Amount</th>
+              <th class="border-2 border-slate-500 font-kanit">Receiver</th>
+              <th class="border-2 border-slate-500 font-kanit">Date</th>
+              <th class="border-2 border-slate-500 font-kanit">Transaction ID</th>
+              <th class="border-2 border-slate-500 font-kanit">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border-2 border-slate-500 px-2">$<span>500</span></td>
+              <td class="border-2 border-slate-500 px-2">
+                <span class="block">John Doe</span>
+                <span class="block"></span></td>
+              <td class="border-2 border-slate-500 px-2">
+                <span class="block">2023-05-19</span>
+                <span class="block">10:04:17 AM</span>
+              </td>
+              <td class="border-2 border-slate-500 px-2">34260522816517042</td>
+              <td class="border-2 border-slate-500 px-2 text-amber-600 font-semibold">Pending!</td>
+            </tr>
+            <tr>
+              <td class="border-2 border-slate-500 px-2">$<span>1500</span></td>
+              <td class="border-2 border-slate-500 px-2">
+                <span class="block"> Arundel Mills</span>
+                <span class="block">Blvd, Hanover, MD210</span>
+              </td>
+              <td class="border-2 border-slate-500 px-2">
+                <span class="block">2023-03-26</span>
+                <span class="block">06:04:17 AM</span>
+              </td>
+              <td class="border-2 border-slate-500 px-2"> 4460522816517045</td>
+              <td class="border-2 border-slate-500 px-2 text-emerald-800 font-semibold">Successful!</td>
+            </tr>
+            <tr>
+              <td class="border-2 border-slate-500 px-2">$<span>2800</span></td>
+              <td class="border-2 border-slate-500 px-2">
+                <span class="block">BANCOMER</span>
+                <span class="block"></span>
+              </td>              
+                <td class="border-2 border-slate-500 px-2">
+                  <span class="block">2023-03-25</span>
+                  <span class="block">06:55:37 PM</span>
+                </td>
+              <td class="border-2 border-slate-500 px-2">0475744000</td>
+              <td class="border-2 border-slate-500 px-2 text-red-700 font-semibold">Failed!</td>
+            </tr>
+           
+          </tbody>
+        </table>
+      </div>
+        </div>
+      </div>
+  </section>
+
+</main>
+
+
+  <script defer src="/src/js/main.js"></script>
+</body>
+
+</html>
