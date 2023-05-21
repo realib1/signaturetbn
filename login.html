@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&family=Montserrat:wght@300;600;700&family=Roboto:wght@100;300;500;700&display=swap"
+        rel="stylesheet">
+    <title>Signature Trust Bank</title>
+</head>
+
+<body class="font-roboto text-slate-800 bg-slate-300">
+    <div class="md:flex">
+        <div class="w-[45%] md:flex flex-col justify-center items-center h-screen hidden bg-purple-600">
+            <img class="mx-auto" src="/public/images/logo.png" alt="">
+        </div>
+        <div class="w-full">
+            <div class="px-6 py-8 w-full">
+                <p class="text-right">Don't have an account? <a href="" class="text-orange-600 font-kanit"> Enroll</a>
+                </p>
+            </div>
+
+            <div class="mx-auto shadow-md w-4/5 px-6 py-8">
+                <div class="mt-5">
+                    <img class="mx-auto w-40 border-b border-b-slate-300 px-8" src="/public/images/logo.png" alt="">
+                </div>
+                <div class="w-full lg:w-[60%] mx-auto mt-5 space-y-2">
+                    <div class="mb-5">
+                        <h4 class="text-2xl lg:text-4xl capitalize font-kanit">Welcome back!</h4>
+                        <p class="text-base font-montserrat">An account, with powerful, personalised tools all in one
+                            place</p>
+                    </div>
+                    <div>
+                        <form action="" class="form mx-auto space-y-5">
+                            <div class="space-y-1 bg-slate-200 px-2 py-1 rounded-t-md text-sm font-kanit">
+                                <label for="account-number">Account Number</label> <br>
+                                <input type="text" placeholder="e.g 459803080492" id="account-number"
+                                    class="px-2 py-1 bg-slate-200 w-full outline-none border-b-2 border-slate-400">
+                            </div>
+                            <div class="space-y-1 bg-slate-200 px-2 py-1 rounded-t-md text-sm font-kanit">
+                                <label for="password">Password</label> <br>
+                                <input type="password" placeholder="*************" id="password"
+                                    class="px-2 py-1 bg-slate-200 w-full outline-none border-b-2 border-slate-400">
+                            </div>
+                            <div class="mt-2 text-sm ml-5 font-kanit">
+                                <input type="checkbox" id="show-password" class="mr-1 outline-none">
+                                <label for="show-password">Show Password</label>
+                            </div>
+                            <div class="mt-2 text-sm">
+                                <button type="checkbox" id="login"
+                                    class="w-full bg-orange-500 px-6 py-2 text-slate-100 font-kanit hover:bg-orange-600">Log In</button>
+                            </div>
+                        </form>
+                        <div class="flex justify-center items-center space-x-5 mt-3">
+                            <a href=""
+                                class="text-sm text-orange-600 font-kanit border-r border-slate-300 pr-5 hover:underline">Home</a>
+                            <a href="" class="text-sm text-orange-600 font-kanit hover:underline">Forgot Password?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="/src/js/main.js"></script>
+</body>
+
+</html>
