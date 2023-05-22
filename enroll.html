@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&family=Montserrat:wght@300;600;700&family=Roboto:wght@100;300;500;700&display=swap"
+        rel="stylesheet">
+    <title>Signature Trust Bank</title>
+</head>
+
+<body class="font-roboto text-slate-800 bg-slate-300">
+    <div class="md:flex">
+        <div class="w-[30%] md:flex flex-col justify-center items-center h-screen hidden bg-purple-600 fixed top-0 left-0 overflow-y-auto">
+            <img class="mx-auto" src="/public/images/logo.png" alt="">
+        </div>
+        <div class="w-full md:ml-60 lg:ml-96">
+            <div class="py-8 w-4/5">
+                <p class="text-right">Already have an account?<a href="login.html" class="text-orange-600 font-kanit ml-2">Log In</a>
+                </p>
+            </div>
+
+            <div class="mx-auto shadow-md w-4/5 px-6 py-8">
+                <div>
+                    <img class="mx-auto w-40 border-b border-b-slate-300 px-8" src="/public/images/logo.png" alt="">
+                </div>
+                <div class="w-full lg:w-[60%] mx-auto mt-5 space-y-2">
+                    <div class="mb-5 space-y-2">
+                        <h4 class="text-2xl lg:text-4xl capitalize font-kanit">Create An Account</h4>
+                        <p class="text-sm font-montserrat">Please make sure to use your peson information and make sure they are correct!</p>
+                    </div>
+                    <div>
+                        <form action="" class="form mx-auto space-y-5">
+                            <div class="bg-slate-200 px-4 py-1 pb-0 rounded-t-md text-sm font-kanit border-b-2 border-slate-400">
+                                <label for="firstname">First Name</label> <br>
+                                <input type="text" placeholder="John" id="firstname"
+                                    class="py-1 bg-slate-200 w-full outline-none">
+                            </div>
+                            <div class="bg-slate-200 px-4 py-1 pb-0 rounded-t-md text-sm font-kanit border-b-2 border-slate-400">
+                                <label for="lastname">Last Name</label> <br>
+                                <input type="text" placeholder="Doe" id="lastname"
+                                    class="py-1 bg-slate-200 w-full outline-none">
+                            </div>
+                            <div class="bg-slate-200 px-4 py-1 pb-0 rounded-t-md text-sm font-kanit border-b-2 border-slate-400">
+                                <label for="email">Email Address</label> <br>
+                                <input type="email" placeholder="example@mail.com" id="email"
+                                    class="py-1 bg-slate-200 w-full outline-none">
+                            </div>
+                            <div class="bg-slate-200 px-4 py-1 pb-0 rounded-t-md text-sm font-kanit border-b-2 border-slate-400">
+                                <label for="phone">Phone Number</label> <br>
+                                <input type="tel" placeholder="233 409 409 4902" id="phone"
+                                    class="py-1 bg-slate-200 w-full outline-none">
+                            </div>
+                            <div class="flex justify-between space-x-2 mx-auto">
+                                <div class="bg-slate-200 px-2 py-4 rounded-t-md text-sm font-kanit w-1/2 text-center">
+                                <select name="marital-status" id="relationship" class="cursor-pointer w-full bg-slate-200">
+                                    <option value="Choose  Gender">Gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                            </div>
+                            <div class="bg-slate-200 px-2 py-4 rounded-t-md text-sm font-kanit w-1/2 text-center">
+                                <select name="marital-status" id="relationship" class="cursor-pointer w-full bg-slate-200">
+                                    <option value="Choose Marital Status">Marital Status</option>
+                                    <option value="Single">Single</option>
+                                    <option value="Married">Married</option>
+                                    <option value="Widowed">Widowed</option>
+                                    <option value="Divorced">Divorced</option>
+                                </select>
+                            </div>
+                            </div>
+                            <div class="bg-slate-200 px-4 py-1 pb-0 rounded-t-md text-sm font-kanit border-b-2 border-slate-400">
+                                <label for="dob">Date Of Birth</label> <br>
+                                <input type="date" placeholder="02/12/2000" id="dob"
+                                    class="py-1 bg-slate-200 outline-none w-full cursor-pointer">
+                            </div>
+                            <div class="bg-slate-200 px-4 py-1 pb-0 rounded-t-md text-sm font-kanit border-b-2 border-slate-400">
+                                <label for="address">Home Address</label> <br>
+                                <input type="text" placeholder="Hollybush Farm cotta, Oak Lane" id="address"
+                                    class="py-1 bg-slate-200 w-full outline-none">
+                            </div>
+                            <div class="bg-slate-200 px-4 py-1 pb-0 rounded-t-md text-sm font-kanit border-b-2 border-slate-400">
+                                <label for="occupation">Occupation</label> <br>
+                                <input type="text" placeholder="e.g Teacher" id="address"
+                                    class="py-1 bg-slate-200 w-full outline-none">
+                            </div>
+                            <div class="flex justify-between space-x-2 mx-auto">
+                                <div class="bg-slate-200 px-2 py-4 rounded-t-md text-sm font-kanit w-1/2 text-center">
+                                <select name="account-type" id="account-type" class="cursor-pointer w-full bg-slate-200">
+                                    <option value="Account Type">Account Type</option>
+                                    <option value="Savings">Savings</option>
+                                    <option value="Current">Current</option>
+                                    <option value="Checking">Checking</option>
+                                    <option value="fixed deposit">Fixed Deposit</option>
+                                    <option value="Online Banking">Online Banking</option>
+                                    <option value="Joint">Joint</option>
+                                    <option value="Non-Resident">Non-Resident</option>
+                                    <option value="Domicilary">Domicilary</option>
+                                </select>
+                            </div>
+                            <div class="bg-slate-200 px-2 py-4 rounded-t-md text-sm font-kanit w-1/2 text-center">
+                                <select class="w-full bg-slate-200 cursor-pointer" id="currency-select"
+                                    name="currency">
+                                    <option value="">Currency</option>
+                                    <option value="AFN">AFN - Afghan Afghani - ؋</option>
+                                    <option value="ALL">ALL - Albanian Lek - Lek</option>
+                                    <option value="DZD">DZD - Algerian Dinar - دج</option>
+                                    <option value="AOA">AOA - Angolan Kwanza - Kz</option>
+                                    <option value="ARS">ARS - Argentine Peso - $</option>
+                                    <option value="AMD">AMD - Armenian Dram - ֏</option>
+                                    <option value="AWG">AWG - Aruban Florin - ƒ</option>
+                                    <option value="AUD">AUD - Australian Dollar - $</option>
+                                    <option value="AZN">AZN - Azerbaijani Manat - m</option>
+                                    <option value="BSD">BSD - Bahamian Dollar - B$</option>
+                                    <option value="BHD">BHD - Bahraini Dinar - .د.ب</option>
+                                    <option value="BDT">BDT - Bangladeshi Taka - ৳</option>
+                                    <option value="BBD">BBD - Barbadian Dollar - Bds$</option>
+                                    <option value="BYR">BYR - Belarusian Ruble - Br</option>
+                                    <option value="BEF">BEF - Belgian Franc - fr</option>
+                                    <option value="BZD">BZD - Belize Dollar - $</option>
+                                    <option value="BMD">BMD - Bermudan Dollar - $</option>
+                                    <option value="BTN">BTN - Bhutanese Ngultrum - Nu.</option>
+                                    <option value="BTC">BTC - Bitcoin - ฿</option>
+                                    <option value="BOB">BOB - Bolivian Boliviano - Bs.</option>
+                                    <option value="BAM">BAM - Bosnia-Herzegovina Convertible Mark - KM</option>
+                                    <option value="BWP">BWP - Botswanan Pula - P</option>
+                                    <option value="BRL">BRL - Brazilian Real - R$</option>
+                                    <option value="GBP">GBP - British Pound Sterling - £</option>
+                                    <option value="BND">BND - Brunei Dollar - B$</option>
+                                    <option value="BGN">BGN - Bulgarian Lev - Лв.</option>
+                                    <option value="BIF">BIF - Burundian Franc - FBu</option>
+                                    <option value="KHR">KHR - Cambodian Riel - KHR</option>
+                                    <option value="CAD">CAD - Canadian Dollar - $</option>
+                                    <option value="CVE">CVE - Cape Verdean Escudo - $</option>
+                                    <option value="KYD">KYD - Cayman Islands Dollar - $</option>
+                                    <option value="XOF">XOF - CFA Franc BCEAO - CFA</option>
+                                    <option value="XAF">XAF - CFA Franc BEAC - FCFA</option>
+                                    <option value="XPF">XPF - CFP Franc - ₣</option>
+                                    <option value="CLP">CLP - Chilean Peso - $</option>
+                                    <option value="CNY">CNY - Chinese Yuan - ¥</option>
+                                    <option value="COP">COP - Colombian Peso - $</option>
+                                    <option value="KMF">KMF - Comorian Franc - CF</option>
+                                    <option value="CDF">CDF - Congolese Franc - FC</option>
+                                    <option value="CRC">CRC - Costa Rican ColÃ³n - ₡</option>
+                                    <option value="HRK">HRK - Croatian Kuna - kn</option>
+                                    <option value="CUC">CUC - Cuban Convertible Peso - $, CUC</option>
+                                    <option value="CZK">CZK - Czech Republic Koruna - Kč</option>
+                                    <option value="DKK">DKK - Danish Krone - Kr.</option>
+                                    <option value="DJF">DJF - Djiboutian Franc - Fdj</option>
+                                    <option value="DOP">DOP - Dominican Peso - $</option>
+                                    <option value="XCD">XCD - East Caribbean Dollar - $</option>
+                                    <option value="EGP">EGP - Egyptian Pound - ج.م</option>
+                                    <option value="ERN">ERN - Eritrean Nakfa - Nfk</option>
+                                    <option value="EEK">EEK - Estonian Kroon - kr</option>
+                                    <option value="ETB">ETB - Ethiopian Birr - Nkf</option>
+                                    <option value="EUR">EUR - Euro - €</option>
+                                    <option value="FKP">FKP - Falkland Islands Pound - £</option>
+                                    <option value="FJD">FJD - Fijian Dollar - FJ$</option>
+                                    <option value="GMD">GMD - Gambian Dalasi - D</option>
+                                    <option value="GEL">GEL - Georgian Lari - ლ</option>
+                                    <option value="DEM">DEM - German Mark - DM</option>
+                                    <option value="GHS">GHS - Ghanaian Cedi - GH₵</option>
+                                    <option value="GIP">GIP - Gibraltar Pound - £</option>
+                                    <option value="GRD">GRD - Greek Drachma - ₯, Δρχ, Δρ</option>
+                                    <option value="GTQ">GTQ - Guatemalan Quetzal - Q</option>
+                                    <option value="GNF">GNF - Guinean Franc - FG</option>
+                                    <option value="GYD">GYD - Guyanaese Dollar - $</option>
+                                    <option value="HTG">HTG - Haitian Gourde - G</option>
+                                    <option value="HNL">HNL - Honduran Lempira - L</option>
+                                    <option value="HKD">HKD - Hong Kong Dollar - $</option>
+                                    <option value="HUF">HUF - Hungarian Forint - Ft</option>
+                                    <option value="ISK">ISK - Icelandic KrÃ³na - kr</option>
+                                    <option value="INR">INR - Indian Rupee - ₹</option>
+                                    <option value="IDR">IDR - Indonesian Rupiah - Rp</option>
+                                    <option value="IRR">IRR - Iranian Rial - ﷼</option>
+                                    <option value="IQD">IQD - Iraqi Dinar - د.ع</option>
+                                    <option value="ILS">ILS - Israeli New Sheqel - ₪</option>
+                                    <option value="ITL">ITL - Italian Lira - L,£</option>
+                                    <option value="JMD">JMD - Jamaican Dollar - J$</option>
+                                    <option value="JPY">JPY - Japanese Yen - ¥</option>
+                                    <option value="KES">KES - Kenyan Shilling - KSh</option>
+                                    <option value="KWD">KWD - Kuwaiti Dinar - ك.د</option>
+                                    <option value="LBP">LBP - Lebanese Pound - £</option>
+                                    <option value="LSL">LSL - Lesotho Loti - L</option>
+                                    <option value="LRD">LRD - Liberian Dollar - $</option>
+                                    <option value="LYD">LYD - Libyan Dinar - د.ل</option>
+                                    <option value="LTL">LTL - Lithuanian Litas - Lt</option>
+                                    <option value="MXN">MXN - Mexican Peso - $</option>
+                                    <option value="ANG">ANG - Netherlands Antillean Guilder - ƒ</option>
+                                    <option value="TWD">TWD - New Taiwan Dollar - $</option>
+                                    <option value="NZD">NZD - New Zealand Dollar - $</option>
+                                    <option value="NIO">NIO - Nicaraguan CÃ³rdoba - C$</option>
+                                    <option value="NGN">NGN - Nigerian Naira - ₦</option>
+                                    <option value="KPW">KPW - North Korean Won - ₩</option>
+                                    <option value="NOK">NOK - Norwegian Krone - kr</option>
+                                    <option value="PKR">PKR - Pakistani Rupee - ₨</option>
+                                    <option value="PHP">PHP - Philippine Peso - ₱</option>
+                                    <option value="PLN">PLN - Polish Zloty - zł</option>
+                                    <option value="QAR">QAR - Qatari Rial - ق.ر</option>
+                                    <option value="RON">RON - Romanian Leu - lei</option>
+                                    <option value="RUB">RUB - Russian Ruble - ₽</option>
+                                    <option value="RWF">RWF - Rwandan Franc - FRw</option>
+                                    <option value="SLL">SLL - Sierra Leonean Leone - Le</option>
+                                    <option value="SGD">SGD - Singapore Dollar - $</option>
+                                    <option value="SOS">SOS - Somali Shilling - Sh.so.</option>
+                                    <option value="ZAR">ZAR - South African Rand - R</option>
+                                    <option value="KRW">KRW - South Korean Won - ₩</option>
+                                    <option value="TOP">TOP - Tongan pa'anga - $</option>
+                                    <option value="TTD">TTD - Trinidad & Tobago Dollar - $</option>
+                                    <option value="TND">TND - Tunisian Dinar - ت.د</option>
+                                    <option value="TRY">TRY - Turkish Lira - ₺</option>
+                                    <option value="TMT">TMT - Turkmenistani Manat - T</option>
+                                    <option value="UGX">UGX - Ugandan Shilling - USh</option>
+                                    <option value="UAH">UAH - Ukrainian Hryvnia - ₴</option>
+                                    <option value="AED">AED - United Arab Emirates Dirham - إ.د</option>
+                                    <option value="UYU">UYU - Uruguayan Peso - $</option>
+                                    <option value="USD">USD - US Dollar - $</option>
+                                    <option value="UZS">UZS - Uzbekistan Som - лв</option>
+                                    <option value="VUV">VUV - Vanuatu Vatu - VT</option>
+                                    <option value="VEF">VEF - Venezuelan BolÃ­var - Bs</option>
+                                    <option value="VND">VND - Vietnamese Dong - ₫</option>
+                                </select>
+                            </div>
+                            </div>
+                            <div class="bg-slate-200 px-4 py-1 pb-0 rounded-t-md text-sm font-kanit border-b-2 border-slate-400">
+                                <label for="password">Password</label> <br>
+                                <input type="password" placeholder="*************" id="password"
+                                    class="py-1 bg-slate-200 w-full outline-none">
+                            </div>
+                            <div class="bg-slate-200 px-4 py-1 pb-0 rounded-t-md text-sm font-kanit border-b-2 border-slate-400">
+                                <label for="repeat-password">Repeat Password</label> <br>
+                                <input type="password" placeholder="*************" id="repeat-password"
+                                    class="py-1 bg-slate-200 w-full outline-none">
+                            </div>
+                            <div class="mt-2 text-sm ml-5 font-kanit">
+                                <input type="checkbox" id="show-password" class="mr-1 outline-none">
+                                <label for="show-password">Show Password</label>
+                            </div>
+                            <div class="mt-2 text-sm">
+                                <button type="checkbox" id="login"
+                                    class="w-full bg-orange-500 px-6 py-2 text-slate-100 font-kanit hover:bg-orange-600">Sign Up</button>
+                            </div>
+                        </form>
+                        <div class="flex justify-center items-center space-x-5 mt-3">
+                            <a href=""
+                                class="text-sm text-orange-600 font-kanit border-r border-slate-400 pr-5 hover:underline">Home</a>
+                            <a href="forgot.html" class="text-sm text-orange-600 font-kanit hover:underline">Forgot Password?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="/src/js/main.js"></script>
+</body>
+
+</html>
